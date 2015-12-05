@@ -103,9 +103,7 @@ header{
 .main-content{
 	box-sizing: border-box;
 	border: solid red;
-	width: 100%;
-	max-width: calc(960px - 250px);
-	min-width: calc(960px - 250px);
+	width: calc(960px - 250px);
 	height: 1000px;
 	z-index: 5;
 }
