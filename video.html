@@ -8,7 +8,7 @@
 
     <title>Zara</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
     <link href="css/mystyle.css" rel="stylesheet">
 </head>
 <body>
@@ -28,73 +28,41 @@
 <div class="art-work">
 	<div class="main-content">
 	    	<ul>
-	    		<li class="art"><img src="pics/feature.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.  here's a cool story.  I had a dream last night where there was no glass.  here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/1.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/2.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/3.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/4.png" alt="art">
+	    		<li class="art"><img class="thumbnail" id="video1" src="pics/4.png" alt="art">
 	    			<div class="art-info">
 	    			</div>
 	    		</li>
-	    		<li class="art"><img src="pics/5.png" alt="art">
+	    		<li class="art"><img class="thumbnail" id="video2" src="pics/4.png" alt="art">
 	    			<div class="art-info">
 	    			</div>
 	    		</li>
-	    		<li class="art"><img src="pics/6.png" alt="art">
+	    		<li class="art"><img class="thumbnail" id="video3" src="pics/4.png" alt="art">
 	    			<div class="art-info">
 	    			</div>
 	    		</li>
-	    		<li class="art"><img src="pics/feature.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.  here's a cool story.  I had a dream last night where there was no glass.  here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/1.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/2.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/3.png" alt="art">
-	    			<div class="art-info">
-	    				here's a cool story.  I had a dream last night where there was no glass.
-	    			</div>
-	    		</li>
-	    		<li class="art"><img src="pics/4.png" alt="art">
+	    		<li class="art"><img class="thumbnail" id="video4" src="pics/4.png" alt="art">
 	    			<div class="art-info">
 	    			</div>
 	    		</li>
-	    		<li class="art"><img src="pics/5.png" alt="art">
+	    		<li class="art"><img class="thumbnail" id="video5" src="pics/4.png" alt="art">
 	    			<div class="art-info">
 	    			</div>
 	    		</li>
-	    		<li class="art"><img src="pics/6.png" alt="art">
+	    		<li class="art"><img class="thumbnail" id="video6" src="pics/4.png" alt="art">
 	    			<div class="art-info">
 	    			</div>
+	    		</li>
 	    		</li>
 	    	</ul>
 	    </div>
 </div>
 
 </body>
+<script>
+$(document).ready(function() {
+        $('img.thumbnail').click(function() {
+            window.location.href = 'videos/' + this.id + '.html';
+        });
+    });
+</script>
 </html>

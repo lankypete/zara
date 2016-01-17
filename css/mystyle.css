@@ -53,7 +53,7 @@ header h1{
 	margin-top: 20px;
 	width: 85%;
 	min-width: 950px;
-	margin-left: 180px;
+	margin-left: 200px;
 }
 
 .bio-box{
@@ -69,7 +69,7 @@ header h1{
 
 .art-work{
 	top: 8px;
-	margin-left: 190px;
+	margin-left: 150px;
 	overflow: scroll;
 	width: 85%;
 }
@@ -85,10 +85,11 @@ header h1{
 .main-content ul{
 	padding: 0;
 	list-style-type: none;
+	max-width: 1000px;
 }
 .art{
-	width: 215px;
-	height: 200px;
+	width: 275px;
+	height: 230px;
 	/*border-right: solid #A43A97 1px;*/
 	display: inline-block;
 	margin: 20px;
@@ -98,19 +99,43 @@ header h1{
 }
 .art img{
 	width: inherit;
-	height: 150px;
-	/*-webkit-box-shadow: -1px 1px 5px 1px rgba(164,58,151,0.78);
-	-moz-box-shadow: -1px 1px 5px 1px rgba(164,58,151,0.78);
-	box-shadow: -1px 1px 5px 1px rgba(164,58,151,0.78);
-	*/
+	height: 190px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(66,66,66,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(66,66,66,1);
+	box-shadow: 0px 0px 5px 0px rgba(66,66,66,1);
 }
 
 .art-info{
 	font-size: 10px;
 	height: 50px;
-	width: 215px;
+	width: 275px;
 	color: #dcf3f1;
 	overflow: scroll;
+	text-align: right;
+}
+
+.show-off{
+	margin-top: 20px;
+	width: 85%;
+	min-width: 950px;
+	margin-left: 180px;
+}
+
+.show-off img{
+	width: 1000px;
+	padding-bottom: 10px;
+}
+
+.show-off iframe{
+	width: 1000px;
+	height: 800px;
+	padding-bottom: 10px;
+}
+
+.description{
+	width: 800px;
+	color: #CEFFFB;
+	padding-top: 20px;
 }
 
 @media (max-width: 800px) {
